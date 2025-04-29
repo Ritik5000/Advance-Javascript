@@ -77,24 +77,72 @@
 
 // Destructuring 
 
-const person = {
-    firstName: "Ravi",
-    lastName: "Singh",
-    age: 20
-};
-// Order of the object does not matter
-// let {firstName, lastName} = person;
-// let {lastName, firstName} = person;
+// const person = {
+//     firstName: "Ravi",
+//     lastName: "Singh",
+//     age: 20
+// };
+// // Order of the object does not matter
+// // let {firstName, lastName} = person;
+// // let {lastName, firstName} = person;
+// // console.log(firstName);
+// // console.log(lastName);
+// // Destucting does not change the original object
+
+// let {firstName, lastName, country="India"} = person;
 // console.log(firstName);
 // console.log(lastName);
-// Destucting does not change the original object
+// console.log(country);
 
-let {firstName, lastName, country="India"} = person;
-console.log(firstName);
-console.log(lastName);
-console.log(country);
+// // allias creation
 
-// allias creation
+// let {lastName: name} = person;
+// console.log(name);
+// let name = "GurukulTheSchools";
+// let [a1,a2,a3,a4,a5]=name;
+// console.log(a1);
 
-let {lastName: name} = person;
-console.log(name);
+
+// Array Destructuring
+// const fruits =["Bananas","Oranges","Apples","Mangos"];
+// let[fruit1,fruit2]=fruits;
+// console.log(fruits);
+
+// Skipping
+// const fruits =["Bananas","Oranges","Apples","Mangos"];
+// let{[0]:fruit1,[1]:fruit2}=fruits;
+// console.log(fruits);
+
+
+// Rest Property
+// const numbers =[10,20,30,40,50,60,70];
+// // Destructuring
+// const[a,b,...rest]=numbers
+// console.log(a,b,rest);
+
+// let firstName="John";
+// let lastName="Doe";
+// // Destructing
+// [firstName,lastName]=[lastName,firstName];
+// console.log(firstName);
+
+// Javascript exponent(**)
+// let x=5;
+// let z = x**2;
+// console.log(z);
+
+// Exponentiation Assignment
+
+// Array Includes
+// 
+
+// Tralling Comma
+// const arr=["one","two","three",];
+// const arr=["one","two","three",,];
+
+// const sparsearray[1,,,4,5,];
+
+// const person ={
+//     firstName:"John",,
+//     age 30;
+// }
